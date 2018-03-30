@@ -1,7 +1,7 @@
-import topAppBarSuite from './top-app-bar/screenshot-suite';
+import temporaryPackageSuite from './temporary-package/screenshot-suite';
 
 const fullSuite = [
-  topAppBarSuite,
+  temporaryPackageSuite,
 ];
 
 export default fullSuite;
