@@ -2,9 +2,9 @@ import ScreenshotSuite from '../screenshot-suite';
 import Screenshot from '../screenshot';
 
 const screenshots = [
-  new Screenshot('fab/standard.html'),
+  new Screenshot('material-icon/menu.html'),
 ];
 
-const screenshotSuite = new ScreenshotSuite('Fab', screenshots);
+const screenshotSuite = new ScreenshotSuite('MaterialIcon', screenshots);
 
 export default screenshotSuite;
