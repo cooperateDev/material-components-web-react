@@ -1,7 +1,8 @@
 {
   "name": "@material/react-line-ripple",
   "version": "0.0.0",
-  "description": "Material Components React Line Ripple",
+  "description": "",
+  "author": "",
   "license": "Apache-2.0",
   "keywords": [
     "mdc web react",
@@ -10,10 +11,6 @@
     "material line-ripple",
     "materialline-ripple"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/material-components/material-components-web-react.git"
-  },
   "dependencies": {
     "@material/line-ripple": "^0.34.0",
     "classnames": "^2.2.5",
