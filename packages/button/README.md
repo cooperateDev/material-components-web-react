@@ -1,6 +1,6 @@
 # React Button
 
-A React version of an [MDC Button](https://github.com/material-components/material-components-web/tree/master/packages/mdc-button).
+MDC React Button is a component for MDC buttons. Please see [MDC Button](https://github.com/material-components/material-components-web/tree/master/packages/mdc-button).
 
 ## Installation
 

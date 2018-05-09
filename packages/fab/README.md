@@ -1,6 +1,6 @@
-# React Floating Action Button
+# Fab React
 
-A React version of an [MDC Floating Action Button](https://github.com/material-components/material-components-web/tree/master/packages/mdc-fab).
+MDC React Fab acts as a React container around MDC Fab. Please see [MDC Fab](https://github.com/material-components/material-components-web/tree/master/packages/mdc-fab).
 
 ## Installation
 
