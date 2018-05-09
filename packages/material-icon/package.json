@@ -1,7 +1,12 @@
 {
   "name": "@material/react-material-icon",
   "version": "0.0.0",
-  "description": "Material Components React Material Icon",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
   "license": "Apache-2.0",
   "keywords": [
     "mdc web react",
@@ -10,10 +15,6 @@
     "material icon",
     "materialicon"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/material-components/material-components-web-react.git"
-  },
   "dependencies": {
     "@material/react-ripple": "^0.0.0",
     "classnames": "^2.2.5",
