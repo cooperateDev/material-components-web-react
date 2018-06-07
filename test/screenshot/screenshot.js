@@ -85,7 +85,7 @@ export default class Screenshot {
         this.saveImage_(diffPath, diff, metadata),
       ]);
 
-      return assert.equal(Number(data.misMatchPercentage), 0);
+      return assert.isBelow(Number(data.misMatchPercentage), 0.021);
     });
   }
 
@@ -199,7 +199,7 @@ export default class Screenshot {
    * @private
    */
   async takeScreenshot_() {
-    const browser = await puppeteer.launch({executablePath: 'google-chrome-unstable'});
+    const browser = await puppeteer.launch();
     const page = await browser.newPage();
     await page.goto(`http://localhost:8080/${this.urlPath_}`, {'waitUntil': 'networkidle2'});
     const imageBuffer = await page.screenshot({fullPage: true});
