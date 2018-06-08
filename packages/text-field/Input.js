@@ -2,7 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
-import {VALIDATION_ATTR_WHITELIST} from '@material/textfield/constants';
+// whitelist based off of https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5/Constraint_validation
+// under section: `Validation-related attributes`
+const VALIDATION_ATTR_WHITELIST = [
+  'pattern', 'min', 'max', 'required', 'step', 'minlength', 'maxlength',
+];
 
 export default class Input extends React.Component {
   constructor(props) {
@@ -79,11 +83,14 @@ export default class Input extends React.Component {
 
   handleValidationAttributeUpdate = (nextProps) => {
     const {foundation} = nextProps;
-
     VALIDATION_ATTR_WHITELIST.some((attr) => {
       if (this.props[attr] !== nextProps[attr]) {
-        foundation.handleValidationAttributeMutation([{
-          attributeName: attr,
+        // TODO: Update this when issue is fixed:
+        // https://github.com/material-components/material-components-web/issues/2716
+        foundation.handleValidationAttributeMutation_([{
+          // TODO: Update this when issue is fixed:
+          // https://github.com/material-components/material-components-web/issues/2717
+          attributeName: VALIDATION_ATTR_WHITELIST[0],
         }]);
         return true;
       }
